@@ -1,0 +1,293 @@
+body {
+    background-color: rgb(255, 127, 127);
+    font-family: 'oswald';
+    margin: 0px;
+    animation-name: 'changec';
+    animation: changec 10s infinite;
+}
+
+@keyframes changec {
+    0% {
+        background-color: rgb(255, 127, 127);
+    }
+
+    50% {
+        background-color: rgb(164, 2, 2);
+    }
+
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    justify-content: center;
+}
+/*---------------\/(navagation bar)Just below the Header\/----------------*/
+.navbar p {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(74, 64, 64);
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: rgb(202, 7, 137);
+}
+
+#maina {
+    text-decoration: underline white;
+}
+/*--------------------------\/CONTENT\/--------------------------------*/
+.thecontent {}
+
+.imagebase {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.thecontent h1 {
+    margin: 0px;
+}
+
+#subt {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+#subp {
+    margin-bottom: 30px;
+}
+
+.subcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.subheader {
+    text-align: center;
+}
+
+/*-----------------------------\/SALE BASE\/------------------------*/
+.salebase {
+    width: 100%;
+    height: 150px;
+    background-image: url(shoes.png);
+}
+
+.salebase h1 {
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: 25px;
+    position: relative;
+    font-size: 100px;
+    left: 25px;
+    color: rgb(255, 235, 12);
+    animation: salecolor 2s infinite;
+}
+
+@keyframes salecolor {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        color: rgb(255, 235, 12);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #resize {
+        display: none;
+        color: red;
+    }
+
+    h1 {
+        color: red;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #resize2 {
+        display: none;
+    }
+}
+/*--------------------------\/IMAGES\/--------------------------------*/
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    height: 340px;
+    margin-bottom: 0px;
+}
+
+.images img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imagesp1,
+.imagesp2,
+.imagesp3,
+.imagesp4 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 0px;
+
+}
+
+/*-----\/Individual images\/----*/
+.imagesp1 #imgp1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.7s ease
+}
+
+.imagesp2 #imgp2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.7s ease
+}
+
+.imagesp3 #imgp3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.7s ease
+}
+
+.imagesp4 #imgp4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.7s ease
+}
+
+/*--------\/Images on hover\/--------*/
+.imagesp1:hover #imgp1 {
+    display: block;
+    opacity: 1;
+}
+
+.imagesp2:hover #imgp2 {
+    opacity: 1;
+}
+
+.imagesp3:hover #imgp3 {
+    opacity: 1;
+}
+
+.imagesp4:hover #imgp4 {
+    opacity: 1;
+}
+
+#impgp1 {
+    transition: 12s;
+}
+
+/*-----------------------\/image texts\/-----------------------------*/
+.infobelow {
+    background-color: rgba(255, 255, 255, 0.834);
+    height: 100px;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+}
+
+#shoename,
+#shoeprice {
+    position: relative;
+    top: 10px;
+}
+/*----------------------------\/Form/Inquiry\/------------------------------*/
+#aboveform{
+    margin: 0px;
+    position: relative;
+}
+
+.userinquiry {
+    width: 100%;
+    height: 155px;
+    background-color: grey;
+}
+
+.userinquiry h1 {
+    position: relative;
+    left: 40%;
+    height: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-decoration: underline solid black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    height: 65%;
+}
+
+#inquiry {
+    width: 250px;
+    height: 100%;
+    margin: 0px;
+    margin-right: 2px;
+}
+
+#form1 {
+    height: 100px;
+}
+
+.userinquiry h1 {
+    width: 200px;
+    height: 40px;
+
+    margin: 0px;
+}
+
+.formp1 input[type='submit'] {
+    height: 25px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 6px;
+}
+
+.formp1 input[type='submit']:hover {
+    background-color: rgb(61, 242, 61);
+    transition: 2s;
+    cursor: pointer;
+}
+
+
