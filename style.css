@@ -51,8 +51,7 @@ body {
     text-decoration: underline white;
 }
 /*--------------------------\/CONTENT\/--------------------------------*/
-.thecontent {}
-
+/*The content has an id*/
 .imagebase {
     margin: 0px;
     display: flex;
@@ -232,6 +231,7 @@ body {
     position: relative;
     top: 10px;
 }
+
 /*----------------------------\/Form/Inquiry\/------------------------------*/
 #aboveform{
     margin: 0px;
@@ -289,5 +289,25 @@ form {
     transition: 2s;
     cursor: pointer;
 }
+/*--------------------\/function on submit\/------------------*/
+#customalert {
+    position: fixed;
+    background-color: rgb(247, 247, 247);
+    left: 32%;
+    top: 25%;
+    height: 300px;
+    width: 400px;
+    display: none;
+    text-align: center;
+    text-decoration:underline red;
+}
 
+#cont{
+    font-size: 40px;
+}
+/*-----------The exit button-----------*/
+#exbutton{
+    position: relative;
+    font-size:40px;
+}
 

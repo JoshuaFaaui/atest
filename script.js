@@ -1,4 +1,8 @@
+let thebutton = getElementById("customalert")
 
 const submitter = clicked => { 
-    alert("working")
+    alert("hi")
+}
+const exbutton = clicked => { 
+
 }
