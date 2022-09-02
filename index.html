@@ -4,7 +4,28 @@
     <title>Kickem4life</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Oswald:wght@300&display=swap">
-    <script src="script.js"></script>
+    <style>
+                
+        .customalert {
+            position: fixed;
+            background-color: rgb(247, 247, 247);
+            left: 32%;
+            top: 25%;
+            height: 300px;
+            width: 400px;
+            text-align: center;
+            text-decoration:underline red;
+        }
+
+        .cont{
+            font-size: 40px;
+        }
+        
+        .exbutton{
+            position: relative;
+            font-size:40px;
+        }
+    </style>
 </head>
 <body>
     
@@ -16,7 +37,7 @@
         <div class="navbar">
             <a id="maina" href="#">Home</a>
             <a href="#">Shop</a>
-            <a href="#">About</a>
+            <a href="#" onclick="aler()">About</a>
         </div>
         <div class="subcenter">
             <div class="subheader">
@@ -71,22 +92,31 @@
     <section class="userinquiry">
         <h1>Inquire about our shoes</h1>
         <form action="mailto:joshuafaaui@gmail.com" method="post">
-            <div id="form1">
-                <textarea name="inquiry" id="inquiry" cols="30" rows="10" placeholder=" your message..." required></textarea>
+            <div class="form1">
+                <textarea value = '' id = 'message' name="inquiry" id="inquiry" cols="30" rows="10" placeholder="(required)your message..." required></textarea>
             </div>
-            <div class="formp1">
-                <label for="name">Full Name:</label><input type="text" name="name" id="name" placeholder="input your full name..." required><br>
-                <label for="number">Number:</label><input type="number" name="number" id="number" placeholder="Phone number..." required><br>
-                <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="@..." required><br>
+            <div id="formp1">
+                <label for="name">Full Name:</label><input value="" type="text" name="name" id="name" placeholder="(optional)"><br>
+                <label for="number">Number:</label><input type="number" name="number" id="number" placeholder="(optional)"><br>
+                <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="(required)" required><br>
                 <input type="submit" onclick="submitter()">
             </div>
             
         </form>
-        <div id="customalert">
-            <div id="cont">Thank you for your inquiry!</div>
-            <button id="exbutton" onclick="exitalert()">continue</button>
+        <div class="customalert">
+            <div class="cont">Thank you for your inquiry!</div>
+            <button class="exbutton" onclick="exitalert()">continue</button>
         
         </div>
     </section>
+    <script>
+        const usermess = document.querySelector("#message")
+        const usern = document.querySelector("#name")
+        const usernum = document.querySelector("#number")
+        const userem = document.querySelector("#email")
+        const modal = document.querySelector('.customalert');
+        modal.style.display = 'none';
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

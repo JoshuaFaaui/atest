@@ -1,8 +1,15 @@
-let thebutton = getElementById("customalert")
 
-const submitter = clicked => { 
-    alert("hi")
+
+function submitter(clicked) {
+    if (usermess.value.length && userem.value.length > 0) {
+        modal.style.display = 'block';
+    }
+    
 }
-const exbutton = clicked => { 
-
+function exitalert(clicked) {
+    modal.style.display = 'none'
+}
+// underlining the about page
+function aler() {
+    alert("uiwhfiuwehf")
 }

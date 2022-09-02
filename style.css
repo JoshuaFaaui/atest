@@ -51,6 +51,9 @@ body {
     text-decoration: underline white;
 }
 /*--------------------------\/CONTENT\/--------------------------------*/
+#thecontent{
+    height: 100%;
+}
 /*The content has an id*/
 .imagebase {
     margin: 0px;
@@ -239,6 +242,8 @@ body {
 }
 
 .userinquiry {
+    position: absolute;
+    float: inline-end;
     width: 100%;
     height: 155px;
     background-color: grey;
@@ -266,9 +271,6 @@ form {
     margin-right: 2px;
 }
 
-#form1 {
-    height: 100px;
-}
 
 .userinquiry h1 {
     width: 200px;
@@ -276,7 +278,14 @@ form {
 
     margin: 0px;
 }
+#form1 {
+    height: fit-content;
+}
 
+#message {
+    height: 100px;
+    margin-right: 6px;
+}
 .formp1 input[type='submit'] {
     height: 25px;
     width: 100%;
@@ -289,25 +298,6 @@ form {
     transition: 2s;
     cursor: pointer;
 }
-/*--------------------\/function on submit\/------------------*/
-#customalert {
-    position: fixed;
-    background-color: rgb(247, 247, 247);
-    left: 32%;
-    top: 25%;
-    height: 300px;
-    width: 400px;
-    display: none;
-    text-align: center;
-    text-decoration:underline red;
-}
 
-#cont{
-    font-size: 40px;
-}
-/*-----------The exit button-----------*/
-#exbutton{
-    position: relative;
-    font-size:40px;
-}
+
 
