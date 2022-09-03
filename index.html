@@ -74,7 +74,7 @@
                 <textarea value = '' id = 'message' name="inquiry" id="inquiry" cols="30" rows="10" placeholder="(required)your message..." required></textarea>
             </div>
             <div id="formp1">
-                <label for="name">Full Name:</label><input value="" type="string" name="name" id="name" placeholder="(optional)"><br>
+                <label for="name">Full Name:</label><input value="" type="string" name="name" id="name" placeholder="(required)" required><br>
                 <label for="number">Number:</label><input type="number" name="number" id="number" placeholder="(optional)"><br>
                 <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="(required)" required><br>
                 <input id="formsubmit" type="submit" onclick="submitter()">
@@ -82,8 +82,11 @@
             
         </form>
         <div class="customalert">
-            <div class="cont">Thank you for your enquiry!</div>
-            <img src="https://www.icegif.com/wp-content/uploads/icegif-13.gif" alt="">
+            <div class="cont">Thank you</div>
+            <br>
+            <div id="cont1"></div>
+            <br>
+            <div id="cont2">for your enquiry!</div>
             <br>
             <button class="exbutton" onclick="exitalert()">continue</button>
         

@@ -65,9 +65,11 @@ body {
 .thecontent h1 {
     margin: 0px;
 }
-
+.subcenter h1{
+    font-size: 30px;
+}
 #subt {
-    font-size: 20px;
+    font-size: 26px;
     margin: 0px;
     margin-bottom: 0px;
 }
@@ -248,7 +250,7 @@ body {
 
 .userinquiry h1 {
     position: relative;
-    left: 40%;
+    left: 43%;
     height: 10px;
     margin-top: 5px;
     margin-bottom: 0px;
@@ -300,33 +302,36 @@ form {
 /*----------------------\/custom alert user on submit\/--------------------*/
 
 /*---styling the box/background of the alert---*/
+
 .customalert {
     position: fixed;
     background-color: rgb(210, 197, 197);
     border: solid rgb(103, 93, 93);
-    left: 29%;
+    left: 33%;
     top: 25%;
     height: 300px;
     width: 400px;
     text-align: center;
-    text-decoration: underline red;
     display: none;
 }
-.customalert img{
+
+/*----\/the content in the alert\/-----*/
+.cont, #cont1, #cont2{
+    position: relative;
+    height: 44px;
+    font-size: 30px;
     margin-bottom: 0px;
 }
-/*----\/the content in the alert\/-----*/
-.cont {
-    position: relative;
-    top: -10px;
-    height: 44px;
-    font-size: 40px;
+.cont,
+#cont1,
+#cont2 br{
+    height: 20px;
 }
 .exbutton {
     position: relative;
     font-size: 40px;
-    bottom: 2.5px;
     border-radius: 15px;
+    float: inline-end;
 }
 .exbutton:hover{
     cursor: pointer;
