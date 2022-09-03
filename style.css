@@ -310,7 +310,7 @@ form {
     width: 400px;
     text-align: center;
     text-decoration: underline red;
-    display: block;
+    display: none;
 }
 .customalert img{
     margin-bottom: 0px;
