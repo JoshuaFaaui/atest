@@ -302,25 +302,36 @@ form {
 /*---styling the box/background of the alert---*/
 .customalert {
     position: fixed;
-    background-color: rgb(247, 247, 247);
-    left: 32%;
+    background-color: rgb(210, 197, 197);
+    border: solid rgb(103, 93, 93);
+    left: 29%;
     top: 25%;
     height: 300px;
     width: 400px;
     text-align: center;
     text-decoration: underline red;
-    display: none;
+    display: block;
 }
-
+.customalert img{
+    margin-bottom: 0px;
+}
 /*----\/the content in the alert\/-----*/
 .cont {
+    position: relative;
+    top: -10px;
+    height: 44px;
     font-size: 40px;
 }
-
 .exbutton {
     position: relative;
     font-size: 40px;
+    bottom: 2.5px;
+    border-radius: 15px;
 }
-
+.exbutton:hover{
+    cursor: pointer;
+    background-color: rgb(61, 242, 61);
+    transition: 2s;
+}
 
 
