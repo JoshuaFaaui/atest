@@ -4,28 +4,6 @@
     <title>Kickem4life</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Oswald:wght@300&display=swap">
-    <style>
-                
-        .customalert {
-            position: fixed;
-            background-color: rgb(247, 247, 247);
-            left: 32%;
-            top: 25%;
-            height: 300px;
-            width: 400px;
-            text-align: center;
-            text-decoration:underline red;
-        }
-
-        .cont{
-            font-size: 40px;
-        }
-        
-        .exbutton{
-            position: relative;
-            font-size:40px;
-        }
-    </style>
 </head>
 <body>
     
@@ -47,7 +25,7 @@
             </div>
         </div>
         <div class="salebase">
-            <h1>SALE-SALE-<label id="resize2">SALE<label id="resize">-SALE-SALE-SALE</label></label></h1>
+            <div class="salecon">SALE•Sale•SALE•SALE</div>
         </div>
         <div class="imagebase">
             
@@ -96,10 +74,10 @@
                 <textarea value = '' id = 'message' name="inquiry" id="inquiry" cols="30" rows="10" placeholder="(required)your message..." required></textarea>
             </div>
             <div id="formp1">
-                <label for="name">Full Name:</label><input value="" type="text" name="name" id="name" placeholder="(optional)"><br>
+                <label for="name">Full Name:</label><input value="" type="string" name="name" id="name" placeholder="(optional)"><br>
                 <label for="number">Number:</label><input type="number" name="number" id="number" placeholder="(optional)"><br>
                 <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="(required)" required><br>
-                <input type="submit" onclick="submitter()">
+                <input id="formsubmit" type="submit" onclick="submitter()">
             </div>
             
         </form>
@@ -109,14 +87,6 @@
         
         </div>
     </section>
-    <script>
-        const usermess = document.querySelector("#message")
-        const usern = document.querySelector("#name")
-        const usernum = document.querySelector("#number")
-        const userem = document.querySelector("#email")
-        const modal = document.querySelector('.customalert');
-        modal.style.display = 'none';
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
