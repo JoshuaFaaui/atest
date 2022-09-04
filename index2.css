@@ -31,6 +31,9 @@ body {
 }
 
 .navbar {
+    z-index: 1;
+    top: 0;
+    position: sticky;
     display: flex;
     background-color: rgb(74, 64, 64);
     border: solid rgb(114, 106, 106);
@@ -46,6 +49,8 @@ body {
 .navbar a:hover {
     background-color: white;
     color: rgb(202, 7, 137);
+    transition: .6s;
+    
 }
 
 #maina {
@@ -57,13 +62,6 @@ body {
     height: 100%;
 }
 
-.imagebase {
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    margin-top: 20px;
-}
 
 .thecontent h1 {
     margin: 0px;
@@ -80,7 +78,10 @@ body {
 }
 
 #subp {
+    position: relative;
+    bottom: 5px;
     margin-bottom: 0px;
+    width: 200px;
 }
 
 .subcenter {
@@ -89,156 +90,30 @@ body {
 }
 
 .subheader {
-    margin-top: 15px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
     text-align: center;
 }
-
-/*-----------------------------\/SALE BASE\/------------------------*/
-
-.salebase {
-    height: fit-content;
-    width: 100%;
-    background-image: url(shoes.png);
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
+/*-----------------------\/About Us\/------------------------*/
+.aboutus{
+    background-color: rgb(204, 134, 134);
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    border-radius: 15px;
+    border: solid black ;
+    margin-bottom: 50px;
 }
-
-.salecon {
-    width: fit-content;
-    height: 150px;
-    color: white;
-    position: relative;
-    font-size: 100px;
-    color: rgb(255, 235, 12);
-    animation: salecolor 2s infinite;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-@keyframes salecolor {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        color: rgb(255, 235, 12);
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-@media only screen and (max-width: 761px) {
-    .salecon {
-        font-size: 40px;
-    }
-
-    .salebase {
-        height: 60px;
-    }
-}
-
-/*--------------------------\/IMAGES\/--------------------------------*/
-.images {
-    display: flex;
-    justify-content: space-evenly;
-    height: 340px;
-    margin-bottom: 0px;
-}
-
-.images img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.imagesp1,
-.imagesp2,
-.imagesp3,
-.imagesp4 {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    margin-bottom: 0px;
-
-}
-
-/*-----\/Individual images\/----*/
-.imagesp1 #imgp1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 0.7s ease
-}
-
-.imagesp2 #imgp2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 0.7s ease
-}
-
-.imagesp3 #imgp3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 0.7s ease
-}
-
-.imagesp4 #imgp4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 0.7s ease
-}
-
-/*--------\/Images on hover\/--------*/
-.imagesp1:hover #imgp1 {
-    display: block;
-    opacity: 1;
-}
-
-.imagesp2:hover #imgp2 {
-    opacity: 1;
-}
-
-.imagesp3:hover #imgp3 {
-    opacity: 1;
-}
-
-.imagesp4:hover #imgp4 {
-    opacity: 1;
-}
-
-#impgp1 {
-    transition: 12s;
-}
-
-/*-----------------------\/image texts\/-----------------------------*/
-.infobelow {
-    background-color: rgba(255, 255, 255, 0.834);
-    height: 100px;
-    width: 100%;
-    margin-top: 0px;
-    position: relative;
-    top: -5px;
+.aboutus p{
+    color: rgb(11, 43, 43);
+    width: 400px;
+    margin: auto;
+    font-size: 26px;
+    font-family: oswald;
     text-align: center;
 }
-
-#shoename,
-#shoeprice {
-    position: relative;
-    top: 10px;
+#findthemhere{
+    text-decoration: underline;
 }
 
 /*----------------------------\/Form/Inquiry\/------------------------------*/
@@ -248,7 +123,8 @@ body {
 }
 
 .userinquiry {
-    position: absolute;
+    bottom: 0px;
+    position: relative;
     float: inline-end;
     width: 100%;
     height: 155px;
@@ -321,6 +197,7 @@ form {
     height: 300px;
     width: 400px;
     text-align: center;
+    z-index: 2;
     display: none;
 }
 

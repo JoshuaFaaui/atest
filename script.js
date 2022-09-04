@@ -57,6 +57,7 @@ const form = document.querySelector('form')
 function exitalert(clicked) {
     modal.style.display = 'none'
     form.reset()
+    cont1.innerHTML = ''
 }
 
 // underlining the about page
