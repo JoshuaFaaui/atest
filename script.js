@@ -5,12 +5,13 @@ const usermess = document.getElementById("message")
 const userem = document.getElementById("email")
 const modal = document.querySelector('.customalert')
 const usern = document.getElementById("name")
+const usernum = document.getElementById("number")
 const cont = document.querySelector('.cont')
 const cont1 = document.getElementById("cont1")
 //---------function runs on submition\/
 function submitter(clicked) {
     if (usermess.value.length && userem.value.length > 0) {
-        if(usern.value.length > 0){
+        if(usern.value.length && usernum.value.length > 0){
             modal.style.display = 'block';
         }  
     }
@@ -47,8 +48,8 @@ function submitter(clicked) {
                 break;
             
         }
+        
     }
-
     
 }
 //resetting form on alerts exit\/
