@@ -95,14 +95,25 @@ body {
     text-align: center;
 }
 /*-----------------------\/About Us\/------------------------*/
+.abfoundation{
+    height: 800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .aboutus{
-    background-color: rgb(204, 134, 134);
-    width: 800px;
+    position: relative;
     height: 600px;
-    margin: auto;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 134, 134);
     border-radius: 15px;
     border: solid black ;
-    margin-bottom: 50px;
 }
 .aboutus p{
     color: rgb(11, 43, 43);
@@ -228,4 +239,21 @@ form {
     cursor: pointer;
     background-color: rgb(61, 242, 61);
     transition: 2s;
+}
+
+/*-------------------------Making it responsive for phones--------------*/
+@media only screen and (max-width:1000px) {
+    .userinquiry{
+        position: absolute;
+        bottom: 0px;
+    }
+    .abfoundation{
+        height: 1400px;
+    }
+    .aboutus{
+        height: 1400px;
+    }
+    .aboutus p{
+        font-size: 40px;
+    }
 }

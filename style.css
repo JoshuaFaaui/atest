@@ -266,6 +266,7 @@ body {
     border-radius: 15px;
     border: solid aliceblue;
     text-align: center;
+    overflow: auto;
 }
 
 /*---------------Content of boxes\/------------------*/
@@ -386,4 +387,24 @@ form {
     transition: 2s;
 }
 
-
+/*-------------------------Making it responsive for phones--------------*/
+@media only screen and (max-width:1000px){
+    .navbar{
+        background-color: blue;
+    }
+    .infoboxes{
+        position: relative;
+        left: 100px;
+        display: table-row;
+    }
+    .box1, .box2, .box3{
+        width: 800px;
+        height: 1000px;
+    }
+    #contp{
+        font-size: 60px;
+    }
+    #boxheading{
+        font-size: 100px;
+    }
+}
