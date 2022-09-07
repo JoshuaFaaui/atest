@@ -4,6 +4,8 @@
     <title>Kickem4life</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Oswald:wght@300&display=swap">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
     
@@ -65,51 +67,61 @@
                 </div>
             </div>
         </div>
-        <div class="infoboxes">
-            <div class="box1">
-                <a id="boxheading" href="index2.html">About us</a> 
-                <br>
-                <p id="contp">Our mission & terms & conditions</p>
+        <div class="boxfoundation">
+            <div class="outerbox">
+                    <div class="box1">
+                        <a id="boxheading" href="index2.html">About us</a> 
+                        <br>
+                        <p id="contp">Our mission & terms & conditions</p>
+                    </div>
             </div>
-            <div class="box2">
-                <label id="boxheading">Our hours</label>
-                <br>
-                <p id="contp">Monday - Friday 10:00 - 18:30<br>Saturday 11:00 - 17:00<br>Sunday CLOSED</p>
+            <div class="outerbox">
+                    <div class="box2">
+                        <label id="boxheading">Our hours</label>
+                        <br>
+                        <p id="contp">Monday - Friday 10:00 - 18:30<br>Saturday 11:00 - 17:00<br>Sunday CLOSED</p>
+                    </div>
             </div>
-            <div class="box3">
-                <label id="boxheading">Inquire about us</label>
-                <br>
-                <p id="contp">Are you curious about the Kicks With Style community?<br>ask us a question below <br>or find our "about us" page</p>
+            <div class="outerbox">
+                <div class="box3">
+                    <label id="boxheading">Inquire about us</label>
+                    <br>
+                    <p id="contp">Are you curious about the Kicks With Style community?<br>ask us a question below <br>or find our "about us" page</p>
+                </div>
             </div>
         </div>
-    </section>
-    
-    <section class="userinquiry">
-        <hr id="aboveform">
-        <h1>Enquire about our shoes</h1>
-        <form action="mailto:joshuafaaui@gmail.com" method="post">
-            <div id="form1">
-                <textarea value = '' id = 'message' name="inquiry" id="inquiry" cols="30" rows="10" placeholder="your message..." required></textarea>
-            </div>
-            <div id="formp1">
-                <label for="name">Full Name:</label><input value="" type="string" name="name" id="name" placeholder="Full Name..." required><br>
-                <label for="number">Number:</label><input type="number" name="number" id="number" placeholder="(+64)" required><br>
-                <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="(name@example.com)" required><br>
-                <input id="formsubmit" type="submit" onclick="submitter()">
-            </div>
-            
-        </form>
-        <div class="customalert">
-            <div class="cont">Thank you</div>
-            <br>
-            <div id="cont1"></div>
-            <br>
-            <div id="cont2">for your enquiry!</div>
-            <br>
-            <button class="exbutton" onclick="exitalert()">continue</button>
         
+    </section>
+    <hr id="aboveform">
+    <section class="userinquiry">
+        <div class="row">
+            <div class="enquiryheader">
+                <h1>Enquire about our shoes</h1>
+            </div>
+            <form class="row2" action="mailto:joshuafaaui@gmail.com" method="post">
+                
+                <div id="form1">
+                    <textarea value = '' id = 'message' name="inquiry" id="inquiry" cols="30" rows="10" placeholder="your message..." required></textarea>
+                </div>
+                <div id="formp1">
+                    <label for="name">Full Name:</label><input value="" type="string" name="name" id="name" placeholder="Full Name..." required><br>
+                    <label for="number">Number:</label><input type="number" name="number" id="number" placeholder="(+64)" required><br>
+                    <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="(name@example.com)" required><br>
+                    <input id="formsubmit" type="submit" onclick="submitter()">
+                </div>
+                
+            </form>
         </div>
     </section>
-    <script src="script.js"></script>
+    <div class="customalert">
+        <div class="cont">Thank you</div>
+        <br>
+        <div id="cont1"></div>
+        <br>
+        <div id="cont2">for your enquiry!</div>
+        <br>
+        <button class="exbutton" onclick="exitalert()">continue</button>
+    
+    </div>
 </body>
 </html>

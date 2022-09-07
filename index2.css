@@ -96,7 +96,7 @@ body {
 }
 /*-----------------------\/About Us\/------------------------*/
 .abfoundation{
-    height: 800px;
+    height: 600px;
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -126,7 +126,36 @@ body {
 #findthemhere{
     text-decoration: underline;
 }
+/*---------------------\/Terms & condititions\/-----------------------*/
+.t\&cfoundation{
+        height: fit-content;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.terms\&conditions{
 
+    position: relative;
+        height: fit-content;
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(204, 134, 134);
+        border-radius: 15px;
+        border: solid black;
+}
+.terms\&conditions p{
+    color: rgb(11, 43, 43);
+        width: 400px;
+        margin: auto;
+        font-size: 26px;
+        font-family: oswald;
+        text-align: center;
+}
 /*----------------------------\/Form/Inquiry\/------------------------------*/
 #aboveform {
     margin: 0px;
@@ -243,10 +272,6 @@ form {
 
 /*-------------------------Making it responsive for phones--------------*/
 @media only screen and (max-width:1000px) {
-    .userinquiry{
-        position: absolute;
-        bottom: 0px;
-    }
     .abfoundation{
         height: 1400px;
     }
