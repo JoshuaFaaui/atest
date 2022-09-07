@@ -428,22 +428,26 @@ form {
     }
     /*----------------The inquiry--------------*/
         .userinquiry {
+            position: relative;
             display: flex;
             height: 600px;
             justify-content: center;
         }
     #form1 textarea{
-        width: 400px;
+        width: 700px;
+        height: 200px;
+        border: solid black;
     }
     #formp1{
         font-size: 20px;
     }
     #name,#email,#number{
-        width: 200px;
-        height: 40px;
+        width: 400px;
+        height: 60px;
         border-radius: 6px;
         font-size: 18px;
         margin-bottom: 10px;
+        overflow: auto;
     }
     
     .row{
@@ -461,6 +465,6 @@ form {
             display: table-row;
     }
     #formsubmit{
-        height: 30px;
+        height: 45px;
     }
 }
