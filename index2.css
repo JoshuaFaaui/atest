@@ -281,4 +281,72 @@ form {
     .aboutus p{
         font-size: 40px;
     }
+    /*----------------The inquiry--------------*/
+    .userinquiry {
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    #message {
+        width: 80%;
+        height: 200px;
+        margin: 0px;
+        position: relative;
+        margin-bottom: 10px;
+        border: solid black;
+    }
+
+    #formp1 {
+        font-size: 20px;
+    }
+
+    #formp1 label {
+        position: relative;
+        left: 15%;
+    }
+
+    #name,
+    #email,
+    #number {
+        position: relative;
+        left: 15%;
+        width: 40%;
+        height: 60px;
+        border-radius: 6px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        overflow: auto;
+        border: solid black;
+    }
+
+    .row {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .cent3 {}
+
+    .row2 {
+        position: relative;
+        height: fit-content;
+        width: 83%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 17%;
+    }
+
+    #formsubmit {
+        position: relative;
+        left: 10%;
+        height: 45px;
+        width: 60%;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
 }
