@@ -4,7 +4,9 @@
     <title>Kickem4life</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Oswald:wght@300&display=swap">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js" defer></script>
+
 
 </head>
 <body>
@@ -99,7 +101,7 @@
             <h1>Enquire about our shoes</h1>
         </div>
         
-        <form class="row2" action="mailto:joshuafaaui@gmail.com" method="post">
+        <form class="row2" onsubmit="submitter();reset();return false">
                 
             
             <textarea value = '' id = 'message' name="inquiry" id="inquiry" cols="30" rows="10" placeholder="your message..." required></textarea>
@@ -108,7 +110,7 @@
                 <label for="name">Full Name:</label><input value="" type="string" name="name" id="name" placeholder="Full Name..." required><br>
                 <label for="number">Number:</label><input type="number" name="number" id="number" placeholder="(+64)" required><br>
                 <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="(name@example.com)" required><br>
-                <input id="formsubmit" type="submit" onclick="submitter()">
+                <input id="formsubmit" type="submit">
             </div>
                 
         </form>
